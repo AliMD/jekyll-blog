@@ -14,4 +14,4 @@ This blog powered by jekyll, testingmd files ...
 He's me in 25 years ago! (farz kon)  
 ![my pic][mypic]  
 
-[mypic]: {{ site.images }}/baby.jpg "Ali Mihandoost Picture"
+[mypic]: {{ site.images }}/mybaby.jpg "Ali Mihandoost Picture"

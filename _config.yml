@@ -1,5 +1,6 @@
-url: http://alimd.github.io/git_playground
-baseurl: /git_playground
+url: http://alimd.github.io
+baseurl: /
+images: /images
 permalink: /:categories/:title/
 markdown: rdiscount
 auto: true

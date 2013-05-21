@@ -5,18 +5,18 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Ali Mihandoost // You found me.</title>
- <link href="YOUR_URL/atom.xml" rel="self"/>
- <link href="YOUR_URL"/>
+ <link href="{{ site.url }}/atom.xml" rel="self"/>
+ <link href="{{ site.url }}" />
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>BLOG_URL</id>
+ <id>{{ site.url }}</id>
  <author>
-   <name>BLOG_NAME</name>
+   <name>Ali Mihandoost // You found me.</name>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="YOUR_URL{{ post.url }}"/>
+   <link href="{{ site.url }}/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>BLOG_URL{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>

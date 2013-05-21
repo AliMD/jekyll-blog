@@ -8,9 +8,10 @@ body {
   color: #666;
 }
 #header {
+  background-image: url("/images/fabric_plaid.png");
   font-family: 'Lato';
   padding: 25px;
-  background: #e4d4a3;
+  background-color: #e4d4a3;
   margin-bottom: 45px;
   color: #333;
 }

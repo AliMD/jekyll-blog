@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Project Name by AliMD</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/AliMD/jekyll-blog">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/AliMD/jekyll-blog/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/AliMD/jekyll-blog/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Project Name</h1>
+          <p>Tagline</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/AliMD">AliMD</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Javascript test</h3>
+
+<div class="highlight"><pre><span class="cm">/* </span>
+<span class="cm"> * Ali.MD/Modernizer</span>
+<span class="cm"> */</span>
+
+<span class="p">;</span><span class="nb">window</span><span class="p">.</span><span class="nx">Modernizr</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">(</span> <span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="kc">undefined</span> <span class="p">)</span> <span class="p">{</span>
+
+    <span class="kd">var</span> <span class="nx">version</span> <span class="o">=</span> <span class="s1">'2.6.2'</span><span class="p">,</span>
+
+    <span class="nx">Modernizr</span> <span class="o">=</span> <span class="p">{},</span>
+
+
+    <span class="nx">docElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">,</span>
+
+    <span class="nx">mod</span> <span class="o">=</span> <span class="s1">'modernizr'</span><span class="p">,</span>
+    <span class="nx">modElem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">mod</span><span class="p">),</span>
+    <span class="nx">mStyle</span> <span class="o">=</span> <span class="nx">modElem</span><span class="p">.</span><span class="nx">style</span><span class="p">,</span>
+
+    <span class="nx">inputElem</span>  <span class="p">,</span>
+
+
+    <span class="nx">toString</span> <span class="o">=</span> <span class="p">{}.</span><span class="nx">toString</span><span class="p">,</span>
+
+    <span class="nx">prefixes</span> <span class="o">=</span> <span class="s1">' -webkit- -moz- -o- -ms- '</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">),</span>
+
+
+    <span class="nx">ns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'svg'</span><span class="o">:</span> <span class="s1">'http://www.w3.org/2000/svg'</span><span class="p">},</span>
+
+    <span class="nx">tests</span> <span class="o">=</span> <span class="p">{},</span>
+    <span class="nx">inputs</span> <span class="o">=</span> <span class="p">{},</span>
+    <span class="nx">attrs</span> <span class="o">=</span> <span class="p">{},</span>
+
+    <span class="nx">classes</span> <span class="o">=</span> <span class="p">[],</span>
+
+    <span class="nx">slice</span> <span class="o">=</span> <span class="nx">classes</span><span class="p">.</span><span class="nx">slice</span><span class="p">,</span>
+
+    <span class="nx">featureName</span><span class="p">,</span>
+
+
+
+    <span class="nx">_hasOwnProperty</span> <span class="o">=</span> <span class="p">({}).</span><span class="nx">hasOwnProperty</span><span class="p">,</span> <span class="nx">hasOwnProp</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">is</span><span class="p">(</span><span class="nx">_hasOwnProperty</span><span class="p">,</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">is</span><span class="p">(</span><span class="nx">_hasOwnProperty</span><span class="p">.</span><span class="nx">call</span><span class="p">,</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="nx">hasOwnProp</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">property</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">_hasOwnProperty</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">property</span><span class="p">);</span>
+      <span class="p">};</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">hasOwnProp</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">property</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">return</span> <span class="p">((</span><span class="nx">property</span> <span class="k">in</span> <span class="nx">object</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">is</span><span class="p">(</span><span class="nx">object</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">prototype</span><span class="p">[</span><span class="nx">property</span><span class="p">],</span> <span class="s1">'undefined'</span><span class="p">));</span>
+      <span class="p">};</span>
+    <span class="p">}</span>
+
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">bind</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">bind</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">bind</span><span class="p">(</span><span class="nx">that</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">target</span> <span class="o">!=</span> <span class="s2">"function"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nx">TypeError</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+            <span class="nx">bound</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">bound</span><span class="p">)</span> <span class="p">{</span>
+
+              <span class="kd">var</span> <span class="nx">F</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){};</span>
+              <span class="nx">F</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">target</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+              <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">F</span><span class="p">();</span>
+
+              <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">target</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span>
+                  <span class="nx">self</span><span class="p">,</span>
+                  <span class="nx">args</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">))</span>
+              <span class="p">);</span>
+              <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="o">===</span> <span class="nx">result</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+              <span class="p">}</span>
+              <span class="k">return</span> <span class="nx">self</span><span class="p">;</span>
+
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+              <span class="k">return</span> <span class="nx">target</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span>
+                  <span class="nx">that</span><span class="p">,</span>
+                  <span class="nx">args</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">))</span>
+              <span class="p">);</span>
+
+            <span class="p">}</span>
+
+        <span class="p">};</span>
+
+        <span class="k">return</span> <span class="nx">bound</span><span class="p">;</span>
+      <span class="p">};</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">setCss</span><span class="p">(</span> <span class="nx">str</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">mStyle</span><span class="p">.</span><span class="nx">cssText</span> <span class="o">=</span> <span class="nx">str</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">setCssAll</span><span class="p">(</span> <span class="nx">str1</span><span class="p">,</span> <span class="nx">str2</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">setCss</span><span class="p">(</span><span class="nx">prefixes</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">str1</span> <span class="o">+</span> <span class="s1">';'</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span> <span class="nx">str2</span> <span class="o">||</span> <span class="s1">''</span> <span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">is</span><span class="p">(</span> <span class="nx">obj</span><span class="p">,</span> <span class="nx">type</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">typeof</span> <span class="nx">obj</span> <span class="o">===</span> <span class="nx">type</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">contains</span><span class="p">(</span> <span class="nx">str</span><span class="p">,</span> <span class="nx">substr</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">!!~</span><span class="p">(</span><span class="s1">''</span> <span class="o">+</span> <span class="nx">str</span><span class="p">).</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">substr</span><span class="p">);</span>
+    <span class="p">}</span>
+
+
+    <span class="kd">function</span> <span class="nx">testDOMProps</span><span class="p">(</span> <span class="nx">props</span><span class="p">,</span> <span class="nx">obj</span><span class="p">,</span> <span class="nx">elem</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">props</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">[</span><span class="nx">props</span><span class="p">[</span><span class="nx">i</span><span class="p">]];</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="nx">item</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+
+                            <span class="k">if</span> <span class="p">(</span><span class="nx">elem</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="k">return</span> <span class="nx">props</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+
+                            <span class="k">if</span> <span class="p">(</span><span class="nx">is</span><span class="p">(</span><span class="nx">item</span><span class="p">,</span> <span class="s1">'function'</span><span class="p">)){</span>
+                                <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="nx">elem</span> <span class="o">||</span> <span class="nx">obj</span><span class="p">);</span>
+                <span class="p">}</span>
+
+                            <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>    <span class="nx">tests</span><span class="p">[</span><span class="s1">'cssgradients'</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">str1</span> <span class="o">=</span> <span class="s1">'background-image:'</span><span class="p">,</span>
+            <span class="nx">str2</span> <span class="o">=</span> <span class="s1">'gradient(linear,left top,right bottom,from(#9f9),to(white));'</span><span class="p">,</span>
+            <span class="nx">str3</span> <span class="o">=</span> <span class="s1">'linear-gradient(left top,#9f9, white);'</span><span class="p">;</span>
+
+        <span class="nx">setCss</span><span class="p">(</span>
+                       <span class="p">(</span><span class="nx">str1</span> <span class="o">+</span> <span class="s1">'-webkit- '</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="nx">str2</span> <span class="o">+</span> <span class="nx">str1</span><span class="p">)</span> <span class="o">+</span>
+                       <span class="nx">prefixes</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">str3</span> <span class="o">+</span> <span class="nx">str1</span><span class="p">)).</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="nx">str1</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+        <span class="p">);</span>
+
+        <span class="k">return</span> <span class="nx">contains</span><span class="p">(</span><span class="nx">mStyle</span><span class="p">.</span><span class="nx">backgroundImage</span><span class="p">,</span> <span class="s1">'gradient'</span><span class="p">);</span>
+    <span class="p">};</span>
+
+    <span class="nx">tests</span><span class="p">[</span><span class="s1">'svg'</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">!!</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span> <span class="o">&amp;&amp;</span> <span class="o">!!</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="nx">ns</span><span class="p">.</span><span class="nx">svg</span><span class="p">,</span> <span class="s1">'svg'</span><span class="p">).</span><span class="nx">createSVGRect</span><span class="p">;</span>
+    <span class="p">};</span>
+    <span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">feature</span> <span class="k">in</span> <span class="nx">tests</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nx">hasOwnProp</span><span class="p">(</span><span class="nx">tests</span><span class="p">,</span> <span class="nx">feature</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+                                    <span class="nx">featureName</span>  <span class="o">=</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+            <span class="nx">Modernizr</span><span class="p">[</span><span class="nx">featureName</span><span class="p">]</span> <span class="o">=</span> <span class="nx">tests</span><span class="p">[</span><span class="nx">feature</span><span class="p">]();</span>
+
+            <span class="nx">classes</span><span class="p">.</span><span class="nx">push</span><span class="p">((</span><span class="nx">Modernizr</span><span class="p">[</span><span class="nx">featureName</span><span class="p">]</span> <span class="o">?</span> <span class="s1">''</span> <span class="o">:</span> <span class="s1">'no-'</span><span class="p">)</span> <span class="o">+</span> <span class="nx">featureName</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+
+     <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">addTest</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">feature</span><span class="p">,</span> <span class="nx">test</span> <span class="p">)</span> <span class="p">{</span>
+       <span class="k">if</span> <span class="p">(</span> <span class="k">typeof</span> <span class="nx">feature</span> <span class="o">==</span> <span class="s1">'object'</span> <span class="p">)</span> <span class="p">{</span>
+         <span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">feature</span> <span class="p">)</span> <span class="p">{</span>
+           <span class="k">if</span> <span class="p">(</span> <span class="nx">hasOwnProp</span><span class="p">(</span> <span class="nx">feature</span><span class="p">,</span> <span class="nx">key</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+             <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">addTest</span><span class="p">(</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">feature</span><span class="p">[</span> <span class="nx">key</span> <span class="p">]</span> <span class="p">);</span>
+           <span class="p">}</span>
+         <span class="p">}</span>
+       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+         <span class="nx">feature</span> <span class="o">=</span> <span class="nx">feature</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+
+         <span class="k">if</span> <span class="p">(</span> <span class="nx">Modernizr</span><span class="p">[</span><span class="nx">feature</span><span class="p">]</span> <span class="o">!==</span> <span class="kc">undefined</span> <span class="p">)</span> <span class="p">{</span>
+                                              <span class="k">return</span> <span class="nx">Modernizr</span><span class="p">;</span>
+         <span class="p">}</span>
+
+         <span class="nx">test</span> <span class="o">=</span> <span class="k">typeof</span> <span class="nx">test</span> <span class="o">==</span> <span class="s1">'function'</span> <span class="o">?</span> <span class="nx">test</span><span class="p">()</span> <span class="o">:</span> <span class="nx">test</span><span class="p">;</span>
+
+         <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">enableClasses</span> <span class="o">!==</span> <span class="s2">"undefined"</span> <span class="o">&amp;&amp;</span> <span class="nx">enableClasses</span><span class="p">)</span> <span class="p">{</span>
+           <span class="nx">docElement</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="s1">' '</span> <span class="o">+</span> <span class="p">(</span><span class="nx">test</span> <span class="o">?</span> <span class="s1">''</span> <span class="o">:</span> <span class="s1">'no-'</span><span class="p">)</span> <span class="o">+</span> <span class="nx">feature</span><span class="p">;</span>
+         <span class="p">}</span>
+         <span class="nx">Modernizr</span><span class="p">[</span><span class="nx">feature</span><span class="p">]</span> <span class="o">=</span> <span class="nx">test</span><span class="p">;</span>
+
+       <span class="p">}</span>
+
+       <span class="k">return</span> <span class="nx">Modernizr</span><span class="p">;</span> 
+     <span class="p">};</span>
+
+
+    <span class="nx">setCss</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+    <span class="nx">modElem</span> <span class="o">=</span> <span class="nx">inputElem</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+
+    <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">_version</span>      <span class="o">=</span> <span class="nx">version</span><span class="p">;</span>
+
+    <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">_prefixes</span>     <span class="o">=</span> <span class="nx">prefixes</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="nx">Modernizr</span><span class="p">;</span>
+
+<span class="p">})(</span><span class="k">this</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nb">document</span><span class="p">)</span>
+<span class="p">;</span>
+</pre></div>
+
+<h3>Jsbin test</h3>
+
+<p><a href="http://jsbin.com/umihof/2/embed?javascript,live">JS Bin</a></p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
